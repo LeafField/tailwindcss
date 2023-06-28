@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
 .easy-button {
   padding: 8px 16px;
   background-color: #467ef7;
@@ -34,4 +40,12 @@
 .secondary-title::before {
   content: "";
   @apply block w-12 h-2 bg-thema rounded-full mb-1;
+}
+
+.section-paragraph {
+  @apply text-secondary my-6 w-full max-w-3xl;
+}
+
+.badge {
+  @apply px-4 py-2 text-sm bg-badge;
 }
